@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>
+      Weather App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bck" padding>
+    <h1 text-center>SMART WEATHER</h1> <br> 
+  
+  <div class="star"></div>
+  
+  <ion-avatar>
+    <ion-icon name="sunny"></ion-icon>
+  </ion-avatar>
+  <div id="asd" >
+  <ion-list class="txt" center no-lines>
+  
+  
+  <ion-item class="txt1" >
+    
+      <ion-label>CITY</ion-label>
+      <ion-select [(ngModel)]="cityName">
+        <ion-option value="Pretoria">Pretoria</ion-option>
+        <ion-option value="Cape town">Cape town</ion-option>
+        <ion-option value="Johannesburg">Johannesburg</ion-option>
+        <ion-option value="Durban">Durban</ion-option>
+        <ion-option value="Mafikeng">Mafikeng</ion-option>
+        <ion-option value="snes">SNES</ion-option>
+      </ion-select>
+  
+  </ion-item>
+  
+  
+ 
+  </ion-list>
+  <button class="btn"ion-button outline (click)="getWeather()">GET YOUR WEATHER</button>
+  </div>
+  
+  
+  
+  
+  
+ 
+
+</ion-content>
+
